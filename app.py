@@ -5,7 +5,7 @@ from groq import Groq
 
 load_dotenv()                       # reads .env when running on your laptop
 
-MODEL = "llama-3.3-70b-versatile"   # if this 404s, check console.groq.com/docs/models
+MODEL = "openai/gpt-oss-120b"   # if this 404s, check console.groq.com/docs/models
 SYSTEM_PROMPT = "You are a helpful assistant. Answer clearly and concisely."
 MAX_TURNS = 10                      # how many user+assistant pairs to remember
 
@@ -21,7 +21,7 @@ def get_api_key():
         return None
 
 
-st.set_page_config(page_title="Demo Chatbot", page_icon=":speech_balloon:")
+st.set_page_config(page_title="Demo Chatbot", page_icon="=�")
 
 # --- right-align user messages -------------------------------------------
 # Streamlit has no built-in option for this. We tag our own <span> inside the
